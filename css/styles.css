@@ -660,6 +660,7 @@ footer .socials {
 footer .socials img {
   width: 30px;
   height: 30px;
+  filter: invert(99%) sepia(91%) saturate(38%) hue-rotate(294deg) brightness(108%) contrast(100%);
 }
 
 @media only screen and (max-width: 1080px) {
