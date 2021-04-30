@@ -1,0 +1,126 @@
+.gallery {
+    width: 980px;
+
+    margin: 60px auto 60px auto;
+
+    .gallery-title {
+        font-family: Gill;
+        font-size: 25px;
+
+        height: 40px;
+        width: 200px;
+
+        margin-bottom: 40px;
+
+        border-bottom: black 2px solid;
+    }
+
+    .gallery-images {
+        min-height: 515px;
+
+        // margin-bottom: 30px;
+
+        .gallery-row {
+            display: flex;
+            justify-content: space-between;
+
+            height: fit-content;
+
+            margin-bottom: 20px;
+
+            .image {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+    
+            #foodfestival {
+                width: 489px;
+                height: 187px;
+    
+                display: block;
+    
+                background-image: linear-gradient($overlay-yellow, $overlay-yellow) , url(../assets/images/gallery/1.png);
+            }
+    
+            #deejay {
+                width: 187px;
+                height: 187px;
+    
+                display: block;
+    
+                background-image: linear-gradient($overlay-pink, $overlay-pink) , url(../assets/images/gallery/2.jpeg);
+            }
+    
+            #speech {
+                width: 265px;
+                height: 187px;
+    
+                display: block;
+    
+                background-image: linear-gradient($overlay-green, $overlay-green) , url(../assets/images/gallery/3.jpg);
+            }
+    
+            #openfoodfest {
+                width: 603px;
+                height: 306px;
+    
+                display: block;
+    
+                background-image: linear-gradient($overlay-purple, $overlay-purple), url(../assets/images/gallery/4.jpg);
+            }
+    
+            #international {
+                width: 355px;
+                height: 306px;
+    
+                display: block;
+    
+                background-image: linear-gradient($overlay-blue, $overlay-blue), url(../assets/images/gallery/5.png);
+            }
+        }
+
+        
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .gallery {
+        width: 90%;
+
+        .gallery-images {
+            margin-bottom: 100px;
+            .gallery-row {
+                // flex-direction: column;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+
+                #foodfestival {
+                    width: 100%;
+                    height: 220px;
+                    margin-bottom: 20px;
+                }
+
+                #deejay {
+                    width: 34%;
+                    margin-bottom: 20px;
+                }
+
+                #speech {
+                    width: 63%;
+                    margin-bottom: 20px;
+                }
+
+                #openfoodfest {
+                    width: 63%;
+                    margin-bottom: 20px;
+                }
+
+                #international {
+                    width: 34%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.hero-image {
+    width: 100%;
+    min-height: 500px;
+
+    padding: 0 50px 50px 50px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+        background-image: linear-gradient($overlay-yellow, $overlay-yellow) , url(../assets/images/home-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    .hero-content {
+        width: 80%;
+
+        margin-top: 60px;
+
+        text-align: center;
+
+        .hero-title {
+            font-family: PTSerif-R;
+            font-size: 40px;
+            color: white;
+
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-family: Gill;
+            font-size: 20px;
+            color: #ee4367;
+
+            margin-bottom: 50px;
+        }
+
+        .hero-desc {
+            font-family: Gill;
+            font-size: 20px;
+            color: white;
+
+            font-style: italic;
+
+            margin-bottom: 50px;
+        }
+
+        .button {
+            padding: 10px 20px 10px 20px;
+
+            font-family: Gill;
+            font-size: 15px;
+            text-decoration: none;
+            color: white;
+
+            background-color: #ee4367;
+        }
+    }
+}
+
+

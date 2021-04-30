@@ -1,0 +1,43 @@
+.about {
+    width: 980px;
+
+    margin: 90px auto 0 auto;
+
+    .image {
+        height: 380px;
+
+        background-image: linear-gradient($overlay-yellow, $overlay-yellow) , url(../assets/images/about.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about-content {
+        margin-top: -25px;
+
+        .about-title {
+            font-family: Gill;
+            font-size: 25px;
+
+            height: 40px;
+            width: 200px;
+
+            margin-bottom: 40px;
+
+            border-bottom: black 2px solid;
+        }
+
+        .about-desc {
+            font-family: Gill;
+            font-size: 16px;
+
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .about {
+        width: 90%;
+    }
+}

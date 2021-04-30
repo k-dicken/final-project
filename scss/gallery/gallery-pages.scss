@@ -1,0 +1,112 @@
+.gallery-page {
+    width: 980px;
+
+    margin: 50px auto 70px auto;
+
+    .gp-image {
+        height: 400px;
+
+        display: block;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .foodfestival {
+        background-image: linear-gradient($overlay-yellow, $overlay-yellow) , url(../assets/images/gallery/1.png);
+    }
+
+    .deejay {
+        background-image: linear-gradient($overlay-pink, $overlay-pink) , url(../assets/images/gallery/2.jpeg);
+    }
+
+    .speech {
+        background-image: linear-gradient($overlay-green, $overlay-green) , url(../assets/images/gallery/3.jpg);
+    }
+
+    .foodfest {
+        background-image: linear-gradient($overlay-purple, $overlay-purple) , url(../assets/images/gallery/4.jpg);
+    }
+
+    .international {
+        background-image: linear-gradient($overlay-blue, $overlay-blue) , url(../assets/images/gallery/5.png);
+    }
+
+    .gp-page-content {
+        margin-top: -280px;
+
+        .gp-title {
+            font-family: Gill;
+            font-size: 140px;
+    
+            text-shadow: 5px 5px 6px rgba(0,0,0,.16);
+    
+            span {
+                font-size: 300px; 
+            }
+        }
+
+        .yellow {
+            color: $yellow;
+        }
+
+        .pink {
+            color: $pink;
+        }
+
+        .purple {
+            color: $purple;
+        }
+
+        .green {
+            color: $green;
+        }
+
+        .blue {
+            color: $blue;
+        }
+    
+        .gp-paragraphs {
+            display: flex;
+            justify-content: space-between;
+
+            font-style:italic;
+            font-family: Gill;
+            font-size: 16px;
+    
+            p {
+                width: 45%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .gallery-page {
+        width: 90%;
+
+        .gp-page-content {
+            margin-top: -140px;
+
+            .gp-title {
+                font-size: 70px;
+
+                span {
+                    font-size: 150px;
+                }
+            }
+
+            .gp-paragraphs {
+                flex-direction: column;
+
+                p {
+                    width: 100%;
+
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

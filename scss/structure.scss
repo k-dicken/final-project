@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-bottom: 16px;
+}
+
+.page {
+    min-height: 100%;
+}
+
+// reused items
+
+.title {
+    font-family: Gill;
+    font-size: 25px;
+
+    height: 40px;
+    width: 200px;
+
+    margin-bottom: 40px;
+
+    border-bottom: black 2px solid;
+}
+
+.date {
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ee4367;
+
+    .number {
+        font-family: Gill;
+        color: white;
+        font-size: 22px;
+
+        margin-bottom: 0;
+    }
+
+    .month {
+        font-family: Gill;
+        color: white;
+        font-size: 12px;
+
+        margin-bottom: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: row;
+}
+
+.desc {
+    .desc-title {
+        font-family: Gill;
+        font-size: 15px;
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    .black-text {
+        color: black;
+    }
+
+    .desc-caption {
+        font-family: Gill;
+        color: #ee4367;
+        font-size: 13px;
+    }
+}
+
+
+@font-face {
+    font-family: Gill;
+    src: url(../assets/fonts/GillSans.ttc);
+}
+
+@font-face {
+    font-family: PTSerif-Reg;
+    src: url(../assets/fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTSerif-I;
+    src: url(../assets/fonts/PTSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: PTSerif-BI;
+    src: url(../assets/fonts/PTSerif-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: PTSerif-B;
+    src: url(../assets/fonts/PTSerif-Bold.ttf);
+}
+
